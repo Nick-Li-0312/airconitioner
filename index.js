@@ -58,10 +58,10 @@ app.get('/send',(req,res) =>{
         type: 'text',
         text: 'Hello World!'
       };
-    client.pushMessage("Ue521265b814673aaf5f56d1216979d54",message)
+    client.pushMessage("U195b142ac417f4d6f2bb93c04447fba0",message)
     .then(() => {
         console.log("Message pushed")
-        res.send("message sent")
+        res.send("123")
     })
     .catch((err) => {
         res.send("error pushing message")
